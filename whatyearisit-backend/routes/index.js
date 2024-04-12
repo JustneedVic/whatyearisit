@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 /* GET home page. */
-router.get('whatyearisit-six.vercel.app//', function (req, res, next) {
+router.get('/year', function (req, res, next) {
   const date = new Date().getFullYear();
   res.json({ year: date });
 });
